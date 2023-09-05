@@ -11,11 +11,28 @@ body {
   max-width: 100%;
 }
 
+/* Styles for the arrow-up button */
+.arrow-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+.arrow-up img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
 #home,
 #aboutme,
-#works,
-#contact {
+#works {
   min-height: 100vh;
+}
+
+#contact {
+  min-height: 90vh;
 }
 
 .body-container {
@@ -29,11 +46,9 @@ body {
   display: flex;
   justify-content: center;
   font-size: 1.5em;
-  position: sticky;
   top: 0;
   background-color: rgba(25, 10, 0, 1);
   z-index: 1000;
-  padding: 1% 0 1% 0; /* Adjust the padding value as needed */
 }
 
 .nav-links li {
@@ -70,7 +85,7 @@ body {
 div.title {
   display: inline-block;
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 10%;
   width: 45%;
 }
@@ -98,15 +113,6 @@ h3 {
   color: rgba(255, 252, 232, 1);
 }
 
-/* div.links {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 1em 0 0 0;
-  gap: 30px;
-} */
-
 div.getintouch {
   padding: 1.5em 0 0 0;
 }
@@ -115,23 +121,8 @@ div.getintouch a {
   font-size: 1.5em;
 }
 
-.getintouch ::before {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  /* length of the hover underline */
-  width: 20%;
-  height: 2px;
-  background-color: rgba(255, 132, 12, 1);
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
-}
-
-.getintouch a:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
+.getintouch a:hover {
+  color: #c06408;
 }
 
 a {
@@ -309,6 +300,8 @@ h2 {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+  max-width: 45%;
+  padding: 1%;
 }
 
 .portfolio .content span {
@@ -338,7 +331,8 @@ h2 {
 
 .portfolio .content p {
   font-size: 1.2em;
-  text-align: center;
+  text-align: justify;
+  line-height: 1.5em;
   max-width: 80%;
   color: rgba(255, 252, 232, 1);
 }
@@ -356,13 +350,13 @@ h2 {
   display: inline-block;
   height: 50%;
   width: 50%;
-  padding: 2%;
 }
 
 .works {
   display: flex;
   align-items: center;
-  padding-bottom: 10%;
+  padding: 8%;
+  justify-content: center;
 }
 
 .works img:hover::before {
@@ -390,13 +384,129 @@ h2 {
   max-height: 100px;
   height: auto;
   width: 100px;
-  padding-bottom: 5%;
+  padding: 5%;
 }
 
 .todoapp {
   max-width: 25%;
   height: auto;
   width: 100px;
+}
+
+.contact span {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: rgba(25, 10, 0, 1);
+  font-size: 4em;
+  font-family: Carme, sans-serif;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgba(255, 132, 12, 1);
+  letter-spacing: 0.05em;
+}
+
+.container {
+  padding-top: 5%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.contact h3 {
+  margin: 0;
+  display: inline;
+}
+
+.pair {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.pair img {
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 3%;
+}
+
+.pair h3 {
+  margin: 0;
+}
+
+.form input {
+  display: block;
+  margin-bottom: 5%;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #ff840c;
+  border-radius: 8px;
+  background: rgba(25, 10, 0, 1);
+  outline: none;
+  color: #fffce8;
+  font-size: 1.5em;
+}
+
+textarea {
+  width: 80%;
+  line-height: 10px;
+  height: 10%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ff840c;
+  background: rgba(25, 10, 0, 1);
+  outline: none;
+  color: #fffce8;
+  font-size: 1.5em;
+  resize: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 130%;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #fffce8;
+  padding-bottom: 1%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ff840c;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+  line-height: 120%;
+  width: auto;
+  resize: none;
+}
+
+button {
+  background-color: #ff840c;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.3em;
+}
+
+button:hover {
+  background-color: #c06408;
 }
 
 /* responsive timeline */

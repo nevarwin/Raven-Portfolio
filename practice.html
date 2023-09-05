@@ -15,7 +15,7 @@
   <body>
     <div class="body-container">
       <ul class="nav-links">
-        <li><a href="#home" class="home active">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#works">Works</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -32,7 +32,7 @@
           </h3>
 
           <div class="getintouch">
-            <a href="contact.html">Let's get in touch!</a>
+            <a href="#contact">Let's get in touch!</a>
           </div>
         </div>
 
@@ -102,7 +102,7 @@
                 <img src="assets/sqllogo.png" alt="sqllogo" />
                 <img src="assets/bootstraplogo.png" alt="bootstraplogo.png" />
               </div>
-              <h3>Links</h3>
+              <h3>Link</h3>
               <div class="links">
                 <a href="https://github.com">Github </a>
               </div>
@@ -131,9 +131,9 @@
                 <img src="assets/flutterlogo.png" alt="flutterlogo.png" />
                 <img src="assets/firebaselogo.png" alt="firebaselogo.png" />
               </div>
-              <h3>Links</h3>
+              <h3>Link</h3>
               <div class="links">
-                <a href="https://github.com"> github </a>
+                <a href="https://github.com"> Github </a>
               </div>
             </div>
           </div>
@@ -142,8 +142,83 @@
 
       <div id="contact" class="contact">
         <span>Let's Connect</span>
+
+        <div class="container">
+          <div class="links">
+            <div class="pair">
+              <img src="LinkedIn.png" alt="linkedIn" />
+              <h3>09124844725</h3>
+            </div>
+            <div class="pair">
+              <img src="Email.png" alt="email" />
+              <h3>ravencsolis@gmail.com</h3>
+            </div>
+            <div class="pair">
+              <img src="Facebook.png" alt="facebook" />
+              <h3>facebook.com/Nevarwin</h3>
+            </div>
+            <div class="pair">
+              <img src="GitHub.png" alt="github" />
+              <h3>github.com/nevarwin</h3>
+            </div>
+          </div>
+
+          <div class="form">
+            <form
+              action="https://formsubmit.co/e9d10e6bde83b726ec4623d85b1511f6"
+              method="POST"
+            >
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="arrow-up" id="arrow-up">
+      <a href="#top">
+        <img src="assets/arrowup.png" alt="Arrow Up" />
+      </a>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.sendgrid.net",
+          Username: "apikey",
+          Password:
+            "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",
+          To: "ravencsolis@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: document.getElementById("subject").value,
+          Body:
+            "Name:" +
+            document.getElementById("message").value +
+            "<br> Email:" +
+            document.getElementById("email").value +
+            "<br> Name:" +
+            document.getElementById("name").value +
+            "<br> Message:" +
+            document.getElementById("message").value,
+        }).then((message) => alert("Message sent successfully"));
+      }
+    </script>
   </body>
   <script>
     // Smooth scrolling when clicking on anchor links
@@ -152,6 +227,29 @@
         e.preventDefault();
 
         document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const arrowUp = document.getElementById("arrow-up");
+
+      // Show the arrow-up button when scrolling down
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) {
+          arrowUp.style.display = "block";
+        } else {
+          arrowUp.style.display = "none";
+        }
+      });
+
+      // Scroll to the top of the page when the arrow-up button is clicked
+      arrowUp.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        document.querySelector("html").scrollIntoView({
           behavior: "smooth",
         });
       });
