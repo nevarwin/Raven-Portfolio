@@ -813,4 +813,10 @@ button:hover {
   .menu-toggle:checked ~ .hamburger-button {
     visibility: hidden;
   }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 1.2em;
+  }
 }
