@@ -14,12 +14,16 @@
   </head>
   <body>
     <div class="body-container">
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div class="mobile-menu">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger-button">&#9776;</label>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
 
       <div id="home">
         <!-- Home section content -->
@@ -111,7 +115,6 @@
           <img src="assets/public.jpeg" alt="geohealth" />
         </div>
         <div class="works">
-          <img class="todoapp" src="assets/todoapp.png" alt="geohealth" />
           <div class="content">
             <h3>Simple Todo List</h3>
             <p>
@@ -137,6 +140,7 @@
               </div>
             </div>
           </div>
+          <img class="todoapp" src="assets/todoapp.png" alt="geohealth" />
         </div>
       </div>
 
@@ -163,31 +167,24 @@
             </div>
           </div>
 
-          <div class="form">
-            <form
-              action="https://formsubmit.co/e9d10e6bde83b726ec4623d85b1511f6"
-              method="POST"
-            >
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required />
+          <form
+            action="https://formsubmit.co/e9d10e6bde83b726ec4623d85b1511f6"
+            method="POST"
+          >
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
 
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
 
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" required />
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
 
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-              ></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-              <button type="submit">Submit</button>
-            </form>
-          </div>
+            <button type="submit">Submit</button>
+          </form>
         </div>
       </div>
     </div>
@@ -196,29 +193,6 @@
         <img src="assets/arrowup.png" alt="Arrow Up" />
       </a>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendEmail() {
-        Email.send({
-          Host: "smtp.sendgrid.net",
-          Username: "apikey",
-          Password:
-            "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",
-          To: "ravencsolis@gmail.com",
-          From: document.getElementById("email").value,
-          Subject: document.getElementById("subject").value,
-          Body:
-            "Name:" +
-            document.getElementById("message").value +
-            "<br> Email:" +
-            document.getElementById("email").value +
-            "<br> Name:" +
-            document.getElementById("name").value +
-            "<br> Message:" +
-            document.getElementById("message").value,
-        }).then((message) => alert("Message sent successfully"));
-      }
-    </script>
   </body>
   <script>
     // Smooth scrolling when clicking on anchor links

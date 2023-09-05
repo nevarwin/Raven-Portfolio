@@ -11,6 +11,15 @@ body {
   max-width: 100%;
 }
 
+/* Hide the checkbox */
+.menu-toggle {
+  display: none;
+}
+
+.hamburger-button {
+  visibility: hidden;
+}
+
 /* Styles for the arrow-up button */
 .arrow-up {
   position: fixed;
@@ -330,7 +339,7 @@ h2 {
 }
 
 .portfolio .content p {
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-align: justify;
   line-height: 1.5em;
   max-width: 80%;
@@ -379,6 +388,7 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
 .tools img {
   max-width: 100px;
   max-height: 100px;
@@ -468,7 +478,7 @@ textarea {
 form {
   display: flex;
   flex-direction: column;
-  width: 130%;
+  width: 35%;
 }
 
 label {
@@ -510,7 +520,7 @@ button:hover {
 }
 
 /* responsive timeline */
-@media screen and (max-width: 1150px) {
+@media (max-width: 1024px) {
   .timeline {
     width: 80vw;
   }
@@ -551,10 +561,256 @@ button:hover {
   #aboutme,
   #works,
   #contact {
-    min-height: 90vh;
+    min-height: 100vh;
+  }
+
+  .logo-container {
+    padding: 0 3% 10% 3%;
+    gap: 5%;
   }
 
   .nav-links {
+    font-size: 1.5em;
+  }
+
+  .works {
+    flex-direction: column-reverse;
+    padding: 5% 2% 5% 2%;
+  }
+
+  .portfolio .content {
+    max-width: 55%;
+    padding: 1%;
+  }
+
+  .portfolio .content p {
+    max-width: 100%;
+    padding: 1%;
+  }
+
+  .works img {
+    width: 60%;
+  }
+
+  .container {
+    padding: 10% 5% 0 5%;
+    gap: 5em;
+  }
+
+  form {
+    width: 40%;
+  }
+
+  label {
+    padding-bottom: 3%;
+  }
+
+  .pair h3 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    margin-bottom: 1.1em;
+  }
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  div.title p {
+    font-size: 4.5em;
+  }
+
+  .aboutme > span,
+  .portfolio > span,
+  .contact > span {
+    font-size: 3em;
+  }
+
+  .arrow-up {
+    right: 10px;
+  }
+  .arrow-up img {
+    width: 30px;
+    height: 30px;
+  }
+
+  h4 {
+    margin: 0;
     font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  div.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    font-size: 0.8em;
+  }
+
+  .timeline {
+    padding: 10% 0 5% 0;
+  }
+
+  .logo-container img {
+    max-width: 80px;
+  }
+
+  .pair img {
+    max-width: 35px;
+    max-height: 35px;
+    margin-right: 3%;
+  }
+
+  .portfolio .content p {
+    max-width: 100%;
+    padding: 1%;
+    font-size: 1.3em;
+  }
+
+  .portfolio .content p {
+    font-size: 1em;
+  }
+
+  .works img {
+    width: 80%;
+  }
+
+  .todoapp {
+    max-width: 30%;
+  }
+
+  .works {
+    flex-direction: column-reverse;
+    padding: 5% 1% 5% 1%;
+  }
+
+  .portfolio .content {
+    max-width: 70%;
+    padding: 1%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    gap: 1em;
+  }
+
+  form {
+    width: 65%;
+    padding-bottom: 5%;
+  }
+
+  label {
+    padding-bottom: 1.2%;
+    font-size: 1em;
+  }
+
+  input {
+    font-size: 1em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    margin-bottom: 0.5em;
+  }
+
+  button {
+    font-size: 1em;
+  }
+}
+
+/* Media query for screens larger than 1200px
+@media (min-width: 1200px) {
+  .arrow-up {
+    right: 30px;
+  }
+  .arrow-up img {
+    width: 50px;
+    height: 50px;
+  } 
+}*/
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .logo-container img {
+    max-width: 65px;
+  }
+
+  .pair h3 {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  .hamburger-button {
+    visibility: visible;
+  }
+
+  .hamburger-button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 0 0 10px;
+  }
+
+  .nav-links {
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: rgba(25, 10, 0, 0.8);
+    width: 100%;
+    z-index: 1000;
+    padding: 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .nav-links a {
+    color: rgba(255, 252, 232, 0.8);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+
+  .nav-links a:hover {
+    color: rgba(255, 132, 12, 1);
+  }
+
+  /* Toggle the menu using the checkbox */
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .menu-toggle:checked ~ .hamburger-button::before {
+    content: "\2715"; /* X symbol */
+    visibility: visible;
+  }
+  /* Hide the hamburger icon when the menu is open */
+  .menu-toggle:checked ~ .hamburger-button {
+    visibility: hidden;
   }
 }
