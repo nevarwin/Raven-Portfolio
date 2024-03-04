@@ -141,16 +141,16 @@ a {
 
 div.photo {
   top: 50%; /* Adjust this value to vertically center the photo */
-  left: 50%;
+  right: 5%;
   position: absolute;
   z-index: 1;
   transform: translate(-50%, -50%); /* Center the photo using transform */
 }
 
-/* div.photo img {
-  height: 100%;
-  width: 100%;
-} */
+div.photo img {
+  height: 125%;
+  width: 125%;
+}
 
 .aboutme {
   margin-top: auto;
@@ -286,15 +286,10 @@ h2 {
   max-width: 100px;
   max-height: 100px;
   width: 100px;
-  height: auto;
+  height: 100px;
   object-fit: contain;
-  padding-bottom: 5%;
+  padding: 3%;
   transition: transform 0.3s ease;
-  flex-basis: calc(12% - 30px);
-}
-
-.logo-container img:hover {
-  transform: scale(1.5);
 }
 
 .logo-container img:hover {
