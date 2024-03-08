@@ -729,18 +729,6 @@ button:hover {
   }
 }
 
-/* Media query for screens larger than 1200px
-@media (min-width: 1200px) {
-  .arrow-up {
-    right: 30px;
-  }
-  .arrow-up img {
-    width: 50px;
-    height: 50px;
-  } 
-}*/
-
-/* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
   .logo-container img {
     max-width: 65px;
@@ -825,5 +813,11 @@ button:hover {
 
   h2 {
     font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  div.photo {
+    visibility: hidden;
   }
 }
