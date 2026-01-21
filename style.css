@@ -172,6 +172,11 @@ h3 {
 }
 
 div.getintouch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
   margin-top: 2rem;
 }
 
@@ -190,6 +195,12 @@ div.getintouch a {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1rem;
+}
+
+.getintouch a.filled {
+  background: rgba(255, 132, 12, 1);
+  color: white;
+  box-shadow: 0 0 15px rgba(255, 132, 12, 0.4);
 }
 
 .getintouch a:hover {
