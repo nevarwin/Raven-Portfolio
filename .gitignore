@@ -1,0 +1,9 @@
+# Ignore all hidden files and folders
+.*
+
+# But DO NOT ignore the .gitignore file itself
+!.gitignore
+
+# Optional: Allow other specific hidden files you might need
+# !.github/
+# !.env.example
