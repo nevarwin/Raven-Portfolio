@@ -90,14 +90,7 @@
                     >&#9776;</label
                 >
 
-                <!-- Theme toggle button -->
-                <button
-                    id="theme-toggle"
-                    class="theme-toggle"
-                    aria-label="Toggle dark/light mode"
-                >
-                    <span class="theme-icon">🌙</span>
-                </button>
+
 
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
@@ -127,279 +120,204 @@
                 </div>
             </div>
 
-            <div
-                id="about"
-                class="aboutme section"
-                role="main"
-                id="main-content"
-            >
+            <div id="about" class="aboutme section">
                 <span>About Me</span>
-                <h3>Experience</h3>
-
-                <div class="timeline">
-                    <div class="checkpoint">
-                        <div>
-                            <h2>BS Information Technology</h2>
-                            <p>2024</p>
-                            <p>Cavite State University - CCAT Campus</p>
-                        </div>
-                    </div>
-                    <div class="checkpoint">
-                        <div>
-                            <h2>Junior Software Developer</h2>
-                            <p>June 2024 – May 2025</p>
-                            <p>PHILCENTRO TECHNOLOGIES INC.</p>
-                            <p>
-                                Engineered scalable RESTful APIs utilizing
-                                <strong>Node.js</strong> handling CRUD
-                                operations. Leveraged
-                                <strong>AWS CloudWatch</strong> for real-time
-                                monitoring and <strong>Postman</strong> for
-                                automated testing, significantly reducing
-                                endpoint latency. Integrated backend services
-                                with <strong>Next.js</strong> Server-Side
-                                Rendering (SSR) for optimized frontend
-                                performance and SEO.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="checkpoint">
-                        <div>
-                            <h2>iOS Developer</h2>
-                            <p>May 2025 – Present</p>
-                            <p>XTREME OFFSHORE OUTSOURCING</p>
-                            <p>
-                                Maintained and developed new features across
-                                <strong
-                                    >5 distinct white-label healthcare app
-                                    targets</strong
-                                >
-                                (including Smart One Health and SaluDi) using
-                                <strong>Swift</strong> and
-                                <strong>Objective-C</strong> with
-                                <strong>UIKit</strong>.
-                            </p>
-                            <ul>
-                                <li>
-                                    Built a real-time video consultation module
-                                    using <strong>WebRTC</strong> for
-                                    peer-to-peer streaming with native call
-                                    handling integration.
-                                </li>
-                                <li>
-                                    Utilized
-                                    <strong
-                                        >Grand Central Dispatch (GCD)</strong
-                                    >
-                                    for concurrent execution of RESTful API
-                                    calls and third-party service integrations.
-                                </li>
-                                <li>
-                                    Integrated
-                                    <strong>Apple HealthKit</strong> to
-                                    synchronize and surface patient health
-                                    metrics within the telemedicine workflow.
-                                </li>
-                                <li>
-                                    Migrated dependency management from
-                                    <strong>CocoaPods</strong> to
-                                    <strong>Swift Package Manager (SPM)</strong>
-                                    for a cleaner, faster build pipeline.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <h3>Skills</h3>
                 
-                <div class="skills-wrapper">
-                    <!-- iOS Development -->
-                    <div class="skill-category">
-                        <h4>iOS Development</h4>
-                        <div class="logo-container">
-                            <div class="icon-tile" data-name="Swift" style="background: linear-gradient(135deg, #FFAC45, #F05138);">
-                                <i data-lucide="swift" style="color: white;"></i>
-                            </div>
-                            <div class="icon-tile" data-name="SwiftUI" style="background: linear-gradient(135deg, #007AFF, #00B4FF);">
-                                <i data-lucide="layout" style="color: white;"></i>
-                            </div>
-                            <div class="icon-tile" data-name="UIKit" style="background: linear-gradient(135deg, #5E5CE6, #BF5AF2);">
-                                <i data-lucide="layers" style="color: white;"></i>
-                            </div>
-                            <div class="icon-tile" data-name="Objective-C" style="background: linear-gradient(135deg, #323232, #646464);">
-                                <i data-lucide="file-code" style="color: white;"></i>
-                            </div>
-                            <div class="icon-tile" data-name="Xcode" style="background: linear-gradient(135deg, #147EFB, #2997FF);">
-                                <i data-lucide="terminal" style="color: white;"></i>
-                            </div>
-                            <div class="icon-tile" data-name="Core Data" style="background: linear-gradient(135deg, #30D158, #34C759);">
-                                <i data-lucide="database" style="color: white;"></i>
-                            </div>
-                            <div class="icon-tile" data-name="HealthKit" style="background: linear-gradient(135deg, #FF2D55, #FF375F);">
-                                <i data-lucide="heart" style="color: white;"></i>
-                            </div>
+                <div class="bento-grid">
+                    <!-- Intro Card -->
+                    <div class="bento-card span-4 ios-purple-grad">
+                        <div class="spotlight"></div>
+                        <h4><i data-lucide="user-round"></i> Philosophy</h4>
+                        <p>I believe in building software that isn't just functional, but emotionally resonant. My approach blends the precision of native mobile engineering with the flexibility of modern web frameworks, always prioritizing performance and user delight.</p>
+                        <div class="tag">Digital Craftsmanship</div>
+                    </div>
+
+                    <!-- Current Role: iOS Developer -->
+                    <div class="bento-card span-2 row-2 ios-blue-grad glowing-border">
+                        <div class="spotlight"></div>
+                        <div>
+                            <h4><i data-lucide="smartphone"></i> iOS Developer</h4>
+                            <p><strong>XTREME OFFSHORE OUTSOURCING</strong><br>May 2025 – Present</p>
+                            <p>Architecting video consultation modules and HealthKit integrations for 5 distinct white-label healthcare app targets.</p>
+                        </div>
+                        <div class="tag">Active Role</div>
+                    </div>
+
+                    <!-- WebRTC Detail -->
+                    <div class="bento-card span-1">
+                        <div class="spotlight"></div>
+                        <h4><i data-lucide="video"></i> WebRTC</h4>
+                        <p>Built real-time video consultation modules with native call handling for telemedicine.</p>
+                    </div>
+
+                    <!-- HealthKit Detail -->
+                    <div class="bento-card span-1">
+                        <div class="spotlight"></div>
+                        <h4><i data-lucide="heart-pulse"></i> HealthKit</h4>
+                        <p>Synchronized critical patient health metrics into live clinical workflows.</p>
+                    </div>
+
+                    <!-- Build Systems -->
+                    <div class="bento-card span-2 ios-purple-grad">
+                        <div class="spotlight"></div>
+                        <h4><i data-lucide="layers"></i> Architect</h4>
+                        <p>Optimized build pipelines with SPM and handled complex concurrency using GCD (Grand Central Dispatch).</p>
+                    </div>
+
+                    <!-- Junior Developer Role -->
+                    <div class="bento-card span-2 ios-pink-grad">
+                        <div class="spotlight"></div>
+                        <div>
+                            <h4><i data-lucide="code-xml"></i> Junior Developer</h4>
+                            <p><strong>PHILCENTRO TECHNOLOGIES</strong><br>2024 – 2025</p>
+                            <p>Engineered high-performance RESTful APIs and connected backend services with Next.js SSR.</p>
                         </div>
                     </div>
 
-                    <!-- Web Development -->
-                    <div class="skill-category">
-                        <h4>Web Development</h4>
-                        <div class="logo-container">
-                            <div class="icon-tile" data-name="HTML5" style="background: #E34F26;">
-                                <i data-lucide="file-type-2" style="color: white;"></i>
-                            </div>
-                            <div class="icon-tile" data-name="CSS3" style="background: #1572B6;">
-                                <i data-lucide="code" style="color: white;"></i>
-                            </div>
-                            <div class="icon-tile" data-name="JavaScript" style="background: #F7DF1E;">
-                                <i data-lucide="braces" style="color: #323330;"></i>
-                            </div>
-                            <div class="icon-tile" data-name="PHP" style="background: #777BB4;">
-                                <i data-lucide="server" style="color: white;"></i>
-                            </div>
-                            <div class="icon-tile" data-name="SQL" style="background: #4479A1;">
-                                <i data-lucide="table-2" style="color: white;"></i>
-                            </div>
-                            <div class="icon-tile" data-name="Laravel" style="background: #FF2D20;">
-                                <i data-lucide="flame" style="color: white;"></i>
-                            </div>
-                        </div>
+                    <!-- API Detail -->
+                    <div class="bento-card span-2">
+                        <div class="spotlight"></div>
+                        <h4><i data-lucide="server"></i> API Engine</h4>
+                        <p>Developed robust CRUD operations and automated testing suites using Postman for 45% latency reduction.</p>
                     </div>
 
-                    <!-- Design & Tools -->
-                    <div class="skill-category">
-                        <h4>Design & Tools</h4>
-                        <div class="logo-container">
-                            <div class="icon-tile" data-name="Figma" style="background: #F24E1E;">
-                                <i data-lucide="figma" style="color: white;"></i>
-                            </div>
-                            <div class="icon-tile" data-name="Photoshop" style="background: #31A8FF;">
-                                <i data-lucide="image" style="color: white;"></i>
-                            </div>
-                            <div class="icon-tile" data-name="Flutter" style="background: #02569B;">
-                                <i data-lucide="smartphone" style="color: white;"></i>
-                            </div>
-                            <div class="icon-tile" data-name="GitHub" style="background: #181717;">
-                                <i data-lucide="github" style="color: white;"></i>
-                            </div>
-                            <div class="icon-tile" data-name="Linux" style="background: #FCC624;">
-                                <i data-lucide="monitor" style="color: black;"></i>
-                            </div>
-                        </div>
+                    <!-- Cloud & Ops -->
+                    <div class="bento-card span-2 ios-blue-grad">
+                        <div class="spotlight"></div>
+                        <h4><i data-lucide="cloud"></i> Cloud Ops</h4>
+                        <p>Monitoring system health and observability using AWS CloudWatch for real-time problem resolution.</p>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="bento-card span-1">
+                        <div class="spotlight"></div>
+                        <h4><i data-lucide="graduation-cap"></i> Education</h4>
+                        <p>BS IT (2024)<br>Cavite State University</p>
+                    </div>
+
+                    <!-- IT Focus -->
+                    <div class="bento-card span-1">
+                        <div class="spotlight"></div>
+                        <h4><i data-lucide="book-open"></i> Focus</h4>
+                        <p>Web Systems & Mobile Dev Specialization.</p>
+                    </div>
+
+                    <!-- Tech Stack Showcase -->
+                    <div class="bento-card span-2">
+                        <div class="spotlight"></div>
+                        <h4><i data-lucide="database"></i> Tech Stack</h4>
+                        <p>Swift, SwiftUI, UIKit, Node.js, Next.js, Laravel, MySQL, PostgreSQL.</p>
+                    </div>
+
+                    <!-- Tools Showcase -->
+                    <div class="bento-card span-2">
+                        <div class="spotlight"></div>
+                        <h4><i data-lucide="palette"></i> Design & OS</h4>
+                        <p>Figma, Photoshop, GitHub Actions, Linux Server Management.</p>
+                        <div class="tag">8+ Tools</div>
                     </div>
                 </div>
             </div>
 
             <div id="works" class="portfolio section">
                 <span>Recent Works</span>
-                <div class="works">
-                    <div class="content">
-                        <h3>Expense Tracker</h3>
-                        <p>
-                            Native iOS financial engine utilizing
-                            <strong>Core Data</strong> for complex object graph
-                            persistence. Implemented custom
-                            <strong>NSPredicate</strong> logic for granular
-                            category filtering and
-                            <strong>MVC architecture</strong> in
-                            <strong>Objective-C</strong> for robust code
-                            separation.
-                        </p>
-                        <div class="redirects">
-                            <h3>Tools</h3>
-                            <div class="tools">
-                                <div class="icon-tile small" data-name="Objective-C" style="background: linear-gradient(135deg, #323232, #646464);">
-                                    <i data-lucide="file-code" style="color: white; width: 20px; height: 20px;"></i>
-                                </div>
-                                <div class="icon-tile small" data-name="Xcode" style="background: linear-gradient(135deg, #147EFB, #2997FF);">
-                                    <i data-lucide="terminal" style="color: white; width: 20px; height: 20px;"></i>
+                
+                <div class="works-container">
+                    <!-- Project 1: Expense Tracker -->
+                    <div class="work-item">
+                        <div class="work-info">
+                            <div class="work-title-row">
+                                <h3>Expense Tracker</h3>
+                                <div class="work-links">
+                                    <a href="https://github.com/nevarwin/ExpenseTrackerObjC" target="_blank" class="github-btn" aria-label="GitHub Repository">
+                                        <i data-lucide="github"></i>
+                                        <span>Source Code</span>
+                                    </a>
                                 </div>
                             </div>
-                            <h3>Link</h3>
-                            <div class="links">
-                                <a
-                                    href="https://github.com/nevarwin/ExpenseTrackerObjC"
-                                    >Github
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <img
-                        src="assets/expense_tracker.png"
-                        alt="Expense Tracker"
-                    />
-                </div>
-                <div class="works">
-                    <div class="content">
-                        <h3>Public Health Disease Geomapping</h3>
-                        <p>
-                            Data visualization and management dashboard built on
-                            <strong>PHP</strong> and <strong>MySQL</strong> for
-                            efficient relational database handling. Implemented
-                            <strong>Geospatial APIs</strong> for dynamic mapping
-                            rendering and <strong>Bootstrap</strong> grid
-                            systems for responsive, data-rich layouts.
-                        </p>
-                        <div class="redirects">
-                            <h3>Tools</h3>
-                            <div class="tools">
-                                <div class="icon-tile small" data-name="PHP" style="background: #777BB4;">
-                                    <i data-lucide="server" style="color: white; width: 20px; height: 20px;"></i>
+                            <p class="work-description">
+                                Native iOS financial engine utilizing <strong>Core Data</strong> for complex object graph persistence. Implemented custom <strong>NSPredicate</strong> logic for granular category filtering and <strong>MVC architecture</strong> in <strong>Objective-C</strong> for robust code separation.
+                            </p>
+                            <div class="work-tech">
+                                <div class="tech-badge">
+                                    <i data-lucide="file-code" style="color: #323330;"></i>
+                                    <span>Objective-C</span>
                                 </div>
-                                <div class="icon-tile small" data-name="SQL" style="background: #4479A1;">
-                                    <i data-lucide="table-2" style="color: white; width: 20px; height: 20px;"></i>
+                                <div class="tech-badge">
+                                    <i data-lucide="terminal" style="color: #147EFB;"></i>
+                                    <span>Xcode</span>
                                 </div>
-                                <div class="icon-tile small" data-name="Bootstrap" style="background: #7952B3;">
-                                    <i data-lucide="layout-template" style="color: white; width: 20px; height: 20px;"></i>
+                                <div class="tech-badge">
+                                    <i data-lucide="database" style="color: #007AFF;"></i>
+                                    <span>Core Data</span>
                                 </div>
-                            </div>
-                            <h3>Link</h3>
-                            <div class="links">
-                                <a href="https://github.com/nevarwin/admin2gh"
-                                    >Github
-                                </a>
                             </div>
                         </div>
                     </div>
-                    <img src="assets/public.jpeg" alt="geohealth" />
-                </div>
-                <div class="works">
-                    <div class="content">
-                        <h3>Simple Todo List</h3>
-                        <p>
-                            Cross-platform productivity tool engineered with
-                            <strong>Flutter</strong>. Utilized the
-                            <strong>Provider</strong> pattern for efficient
-                            global state management and reactive UI updates.
-                            Integrated <strong>Firebase</strong> backend for
-                            reliable real-time data synchronization and
-                            authentication.
-                        </p>
-                        <div class="redirects">
-                            <h3>Tools</h3>
-                            <div class="tools">
-                                <div class="icon-tile small" data-name="Flutter" style="background: #02569B;">
-                                    <i data-lucide="smartphone" style="color: white; width: 20px; height: 20px;"></i>
-                                </div>
-                                <div class="icon-tile small" data-name="Firebase" style="background: #FFCA28;">
-                                    <i data-lucide="flame" style="color: #323330; width: 20px; height: 20px;"></i>
+
+                    <!-- Project 2: Public Health Disease Geomapping -->
+                    <div class="work-item">
+                        <div class="work-info">
+                            <div class="work-title-row">
+                                <h3>Public Health Disease Geomapping</h3>
+                                <div class="work-links">
+                                    <a href="https://github.com/nevarwin/admin2gh" target="_blank" class="github-btn" aria-label="GitHub Repository">
+                                        <i data-lucide="github"></i>
+                                        <span>Source Code</span>
+                                    </a>
                                 </div>
                             </div>
-                            <h3>Link</h3>
-                            <div class="links">
-                                <a
-                                    href="https://github.com/nevarwin/Todo-List-Project"
-                                >
-                                    Github
-                                </a>
+                            <p class="work-description">
+                                Data visualization and management dashboard built on <strong>PHP</strong> and <strong>MySQL</strong> for efficient relational database handling. Implemented <strong>Geospatial APIs</strong> for dynamic mapping rendering and <strong>Bootstrap</strong> grid systems for responsive, data-rich layouts.
+                            </p>
+                            <div class="work-tech">
+                                <div class="tech-badge">
+                                    <i data-lucide="server" style="color: #4169E1;"></i>
+                                    <span>PHP</span>
+                                </div>
+                                <div class="tech-badge">
+                                    <i data-lucide="database" style="color: #4479A1;"></i>
+                                    <span>MySQL</span>
+                                </div>
+                                <div class="tech-badge">
+                                    <i data-lucide="map" style="color: #FF2D55;"></i>
+                                    <span>Geospatial APIs</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <img
-                        class="todoapp"
-                        src="assets/todoapp.png"
-                        alt="geohealth"
-                    />
+
+                    <!-- Project 3: Simple Todo List -->
+                    <div class="work-item">
+                        <div class="work-info">
+                            <div class="work-title-row">
+                                <h3>Simple Todo List</h3>
+                                <div class="work-links">
+                                    <a href="https://github.com/nevarwin/Todo-List-Project" target="_blank" class="github-btn" aria-label="GitHub Repository">
+                                        <i data-lucide="github"></i>
+                                        <span>Source Code</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="work-description">
+                                Cross-platform productivity tool engineered with <strong>Flutter</strong>. Utilized the <strong>Provider</strong> pattern for efficient global state management and reactive UI updates. Integrated <strong>Firebase</strong> backend for reliable real-time data synchronization and authentication.
+                            </p>
+                            <div class="work-tech">
+                                <div class="tech-badge">
+                                    <i data-lucide="smartphone" style="color: #02569B;"></i>
+                                    <span>Flutter</span>
+                                </div>
+                                <div class="tech-badge">
+                                    <i data-lucide="flame" style="color: #FFCA28;"></i>
+                                    <span>Firebase</span>
+                                </div>
+                                <div class="tech-badge">
+                                    <i data-lucide="refresh-cw" style="color: #007AFF;"></i>
+                                    <span>Provider Pattern</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -489,7 +407,7 @@
                         ></div>
 
                         <!-- Cloudflare Turnstile -->
-                        <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="auto"></div>
+                        <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="dark"></div>
 
                         <button type="submit" id="submit-btn">Submit</button>
                     </form>
@@ -507,6 +425,20 @@
             document.addEventListener('DOMContentLoaded', function () {
                 // Initialize Lucide icons
                 lucide.createIcons();
+
+                const bentoData = {}; // Keeping structure for potential future use or just removing
+
+                // Spotlight hover effect logic
+                document.querySelectorAll('.bento-card').forEach(card => {
+                    // Spotlight effect tracking
+                    card.addEventListener('mousemove', (e) => {
+                        const rect = card.getBoundingClientRect();
+                        const x = e.clientX - rect.left;
+                        const y = e.clientY - rect.top;
+                        card.style.setProperty('--x', `${x}px`);
+                        card.style.setProperty('--y', `${y}px`);
+                    });
+                });
 
                 // Smooth scrolling and mobile menu auto-close
             const menuToggle = document.getElementById('menu-toggle');
@@ -657,57 +589,7 @@
                 });
             }
 
-            // Dark/Light Mode Toggle
-            const themeToggle = document.getElementById('theme-toggle');
-            const themeIcon = document.querySelector('.theme-icon');
-            const root = document.documentElement;
 
-            // Check for saved theme preference or default to system preference
-            const savedTheme = localStorage.getItem('theme');
-            const systemPrefersDark = window.matchMedia(
-                '(prefers-color-scheme: dark)',
-            ).matches;
-            const currentTheme =
-                savedTheme || (systemPrefersDark ? 'dark' : 'light');
-
-            // Set initial theme
-            if (currentTheme === 'light') {
-                root.setAttribute('data-theme', 'light');
-                themeIcon.textContent = '☀️';
-            } else {
-                root.removeAttribute('data-theme');
-                themeIcon.textContent = '🌙';
-            }
-
-            // Toggle theme
-            themeToggle.addEventListener('click', () => {
-                const currentTheme = root.getAttribute('data-theme');
-
-                if (currentTheme === 'light') {
-                    root.removeAttribute('data-theme');
-                    themeIcon.textContent = '🌙';
-                    localStorage.setItem('theme', 'dark');
-                } else {
-                    root.setAttribute('data-theme', 'light');
-                    themeIcon.textContent = '☀️';
-                    localStorage.setItem('theme', 'light');
-                }
-            });
-
-            // Listen for system theme changes
-            window
-                .matchMedia('(prefers-color-scheme: dark)')
-                .addEventListener('change', (e) => {
-                    if (!localStorage.getItem('theme')) {
-                        if (e.matches) {
-                            root.removeAttribute('data-theme');
-                            themeIcon.textContent = '🌙';
-                        } else {
-                            root.setAttribute('data-theme', 'light');
-                            themeIcon.textContent = '☀️';
-                        }
-                    }
-                });
         });
     </script>
 </html>
