@@ -5,6 +5,11 @@ const publicDir = path.join(__dirname, 'public');
 const siteKey = process.env.CLOUDFLARE_SITEKEY || '1x00000000000000000000AA'; // Fallback to test key
 
 console.log('--- Starting Build Process ---');
+if (process.env.CLOUDFLARE_SITEKEY) {
+  console.log('✅ CLOUDFLARE_SITEKEY detected in environment.');
+} else {
+  console.log('⚠️ CLOUDFLARE_SITEKEY not found, using fallback test key.');
+}
 
 // 1. Clean and Create Public Directory
 if (fs.existsSync(publicDir)) {
