@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Carme&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Carme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 /* CSS Custom Properties for theming */
 :root {
@@ -57,11 +56,13 @@ html {
 body {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: var(--bg-primary);
     color: var(--text-primary);
     overflow-x: hidden;
     max-width: 100%;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
     transition:
         background-color 0.5s ease,
         color 0.5s ease;
@@ -540,7 +541,7 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 0.9rem;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     letter-spacing: 1px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(255, 132, 12, 0.3);
@@ -552,7 +553,7 @@ a {
     font-size: 0.9rem !important;
     -webkit-text-stroke: 0 !important;
     color: white !important;
-    font-family: 'Comfortaa', sans-serif !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
     margin: 0 !important;
 }
 
@@ -594,7 +595,7 @@ a {
     font-size: 1rem !important;
     font-weight: 600 !important;
     color: var(--text-primary) !important;
-    font-family: 'Comfortaa', sans-serif !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
     -webkit-text-stroke: 0 !important;
     margin: 0 !important;
 }
@@ -677,6 +678,7 @@ a {
 .pair {
     display: flex;
     align-items: center;
+    gap: 20px;
     margin-bottom: 20px;
     background: rgba(255, 255, 255, 0.05);
     padding: 15px 25px;
@@ -696,10 +698,10 @@ a {
 
 
 
-.pair i {
+.pair i,
+.pair svg {
     width: 24px;
     height: 24px;
-    margin-right: 15px;
     flex-shrink: 0;
     color: var(--accent-primary);
 }
@@ -716,6 +718,9 @@ a {
 }
 
 .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     margin-bottom: 25px;
     width: 100%;
 }
@@ -729,7 +734,7 @@ textarea {
     outline: none;
     color: #fffce8;
     font-size: 1rem;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     transition: all 0.3s ease;
     width: 100%;
     box-sizing: border-box;
@@ -767,7 +772,6 @@ label {
     font-weight: bold;
     font-size: 0.9em;
     color: rgba(255, 252, 232, 0.8);
-    margin-bottom: 8px;
     padding: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -775,9 +779,7 @@ label {
 
 
 
-.form-group {
-    margin-bottom: 20px;
-}
+
 
 .cf-turnstile {
     margin-bottom: 20px;
