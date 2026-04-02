@@ -1,5 +1,8 @@
 # Ignore all hidden files and folders
 .*
+public/
+dist/
+node_modules/
 
 # But DO NOT ignore the .gitignore file itself
 !.gitignore
