@@ -1146,3 +1146,33 @@ button:disabled {
         font-size: 1.3em;
     }
 }
+
+/* Developer Icons Styling */
+.dev-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.dev-icon:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 8px var(--accent-primary));
+}
+
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.tech-badge .dev-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.bento-card .tech-grid .dev-icon {
+    width: 32px;
+    height: 32px;
+}
